@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests">
+  <test thread-count="2" name="Test-1">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.Vtiger.OrganizationTest.CreateOrgainzation"/>
+      <class name="com.Vtiger.OrganizationTest.UpdateCustomer"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="2" name="Test-2">
+   <parameter name="browser" value="firefox"></parameter>
+  <classes>
+  <class name="com.Vtiger.OrganizationTest.DleteCustomer"/>
+      <class name="com.Vtiger.OrganizationTest.ModifyCustomer"/>
+  
+  </classes>
+  
+  </test>
+</suite> <!-- Suite -->
